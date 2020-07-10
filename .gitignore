@@ -4,3 +4,5 @@
 .Ruserdata
 
 .remake/*
+
+1_fetch/out/*.csv

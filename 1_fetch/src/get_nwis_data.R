@@ -5,6 +5,7 @@ download_nwis_data <- function(site_nums = c("01427207", "01432160", "01435000",
   # tempdir() creates a temporary directory that is wiped out when you start a new R session; 
   # replace tempdir() with "1_fetch/out" or another desired folder if you want to retain the download
   download_files <- file.path(tempdir(), paste0('nwis_', site_nums, '_data.csv'))
+  #browser() 
   data_out <- data.frame(agency_cd = c(), site_no = c(), dateTime = c(), 
                          X_00010_00000 = c(), X_00010_00000_cd = c(), tz_cd = c())
   # loop through files to download 
